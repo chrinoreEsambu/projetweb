@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrinore - Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 7px;
+        background-color: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+      }
+      body {
+        background-color: #000000;
+        height: 100%;
+      }
+      header h4 {
+        color: #fff;
+        font-size: 18px;
+      }
+      header {
+        padding: 0 10%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: animation2 1s linear;
+      }
+      header a {
+        padding: 8px 30px;
+        text-decoration: 0;
+        font-size: 12px;
+        border: 2px solid #5753cb;
+        color: #5753cb;
+        transition: 0.5s;
+        position: relative;
+      }
+      header a:hover::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        height: 15px;
+        width: 15px;
+        background-color: #5753cb;
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+      header a:hover::before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        bottom: 50px;
+        height: 15px;
+        width: 15px;
+        background-color: #5753cb;
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+
+      header a:hover {
+        background-color: #5753cb;
+        border: 2px solid #fff;
+        border-radius: 6px;
+        transform: rotate(10deg);
+        color: #fff;
+      }
+      .home {
+        display: flex;
+        align-items: center;
+        height: calc(100% - 80px);
+      }
+      .left_right {
+        padding: 0% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .left {
+        width: 45%;
+        animation-delay: 1s;
+        animation: animation1 2s linear;
+      }
+
+      .left span {
+        color: #20669d;
+        font-size: 12px;
+      }
+      .left h1 {
+        color: #fff;
+        margin: 20px 0;
+        font-size: 35px;
+        animation-delay: 2s;
+        animation: animation1 2s ease-out;
+      }
+      .left p {
+        color: #999;
+        font-size: 12px;
+      }
+      .left .buttons {
+        margin: 30px 0;
+        animation-delay: 3s;
+        animation: animation1 2s linear;
+      }
+      .left .buttons a {
+        padding: 8px 30px;
+        text-decoration: 0;
+        font-size: 12px;
+      }
+      .buttons a:first-child {
+        border: 2px solid #5753cb;
+        color: #5753cb;
+      }
+      .buttons a:last-child {
+        background-color: #5753cb;
+        color: #fff;
+        border: 2px solid #5753cb;
+        margin-left: 10px;
+      }
+
+      .right {
+        width: 40%;
+        perspective: 1000px;
+      }
+      .right img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        transition: 0.5s;
+        transform-style: preserve-3d;
+        border-radius: 50%;
+        animation-delay: 2s;
+        animation: animation1 2s linear;
+      }
+      .right img:hover {
+        transform: rotateY(180deg);
+      }
+      h3 {
+        color: #fff;
+      }
+      footer {
+        margin-bottom: 50px;
+      }
+      @keyframes animation1 {
+        from {
+          transform: translateX(-600px);
+        }
+      }
+
+      @keyframes animation2 {
+        from {
+          transform: translateY(-100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h4>chrinore</h4>
+      <a
+        href="https://www.instagram.com/mr_esambu_16/profilecard/?igsh=Y215Njc3N24za2U2"
+        target="_blank"
+        >More Informations</a
+      >
+    </header>
+
+    <section class="home">
+      <div class="left_right">
+        <div class="left">
+          <span>DEV WEB JUNIOR</span>
+          <h1>Bienvenue sur App !</h1>
+          <p>
+            Je suis étudiant à l'Université EPI Sup Sousse Tunisie et passionné
+            par l'informatique, la programmation web. Je développe des
+            applications sur mesure et cherche à résoudre des problèmes
+            complexes à travers le code. Toujours à la recherche de nouveaux
+            défis, je m'intéresse aussi à l'UX/UI et à l'optimisation des
+            performances web. Lorsque je ne suis pas en train de coder, vous
+            pouvez me retrouver en train de regarder des films de romance (oui,
+            vraiment !) Oui, je suis cet étudiant qui vous dira que "j'aime les
+            films de romance... mais juste pour les voir pleurer". 😄.
+          </p>
+          <div class="buttons">
+            <p>
+              Vous savez ce qui m'énerve vraiment ? C'est quand on me demande :
+              "Tu fais quoi dans la vie ?" et que je réponds : "Développeur
+              web", et qu'on me répond : "Ah... tu fais quoi exactement ?".
+            </p>
+            <span>Oui, je suis celui qui en a marre de cette question. 😑</span>
+            <span>Mais j'en pose des tonnes à mon tour. 🙃</span>
+          </div>
+
+          <div>
+            <h3>Fun Fact</h3>
+            <p>
+              Vous savez ce qui est plus compliqué que de coder toute une
+              application en une nuit ? Essayer de choisir un film de romance
+              qui ne vous fasse pas pleurer... 🙃
+            </p>
+          </div>
+
+          <div class="credits">
+            <h3>Crédits de l'application</h3>
+            <p>
+              Cette application a été développée par Chrinore, étudiant en
+              informatique à l'Université Tunisienne EPI Sup. Le code a été
+              écrit en HTML, CSS, et JavaScript. Vous pouvez trouver tous les
+              codes utilisés dans cette application sur demande.
+            </p>
+          </div>
+
+          <footer>
+            <p>&copy; 2024 Chrinore. Tous droits réservés.</p>
+          </footer>
+        </div>
+        <div class="right">
+          <img src="assets/10.gif" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

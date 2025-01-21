@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/d98f6633b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #060606;
+        font-family: "Arial", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        flex-direction: column-reverse;
+        gap: 16px;
+      }
+
+      .container .left-section {
+        position: relative;
+        padding-bottom: 12px;
+        width: 100%;
+        max-width: 50%;
+      }
+
+      .container .left-section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #4a5568;
+        margin-bottom: 8px;
+      }
+
+      .container .left-section p {
+        color: #4a5568;
+        margin-bottom: 16px;
+      }
+
+      .container .left-section button {
+        width: auto;
+        padding: 12px 32px;
+        background-color: #4c51bf;
+        color: #fff;
+        border: 1px solid #4c51bf;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      .container .left-section button:hover {
+        background-color: #434190;
+      }
+
+      .container .right-section img {
+        max-width: 100%;
+      }
+
+      .container .left-section .error-label {
+        font-size: 6rem;
+        font-weight: bold;
+        color: #4c51bf;
+        margin-bottom: 24px;
+      }
+      @media (min-width: 1024px) {
+        .container {
+          flex-direction: row;
+          gap: 28px;
+        }
+        .container .left-section {
+          padding-top: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24">
+      <div class="left-section xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
+        <div class="error-label">404</div>
+        <div class="relative">
+          <div class="absolute">
+            <div>
+              <h1
+                class="my-2 text-white font-bold text-2xl"
+                style="color: #fff"
+              >
+                On dirait que tu as trouvé la porte du grand rien
+              </h1>
+              <p class="my-2 text-gray-800" style="color: #fff">
+                contacter le super administrateur pour recevoir de l'aide
+              </p>
+              <a href="index.php"
+                ><button
+                  class="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"
+                >
+                  <i class="fa-solid fa-left-long"></i> Take me back!
+                </button></a
+              >
+            </div>
+          </div>
+          <!-- <div>
+            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+          </div> -->
+        </div>
+      </div>
+      <div class="right-section">
+        <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
+      </div>
+    </div>
+  </body>
+</html>
